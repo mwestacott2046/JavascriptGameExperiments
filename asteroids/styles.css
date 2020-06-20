@@ -1,0 +1,21 @@
+body {
+    /*text-align: center;*/
+    font-family: sans-serif;
+    background-color: darkslategrey;
+}
+canvas {
+    background-color: black;
+}
+
+h3, h1 {
+    color: whitesmoke;
+}
+
+.highScore {
+    color: lime;
+    padding: 2pt;
+    background-color: black;
+    font-family: Consolas;
+    font-size: 24px;
+}
+
