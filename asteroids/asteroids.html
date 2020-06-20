@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head><title>Asteroids</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body><h1>Asteroids</h1>
+<div style="display: flex">
+    <div style="margin: 20px">
+        <h3>Controls</h3>
+        <table style="color: white">
+            <tr>
+                <td>&#8592;</td>
+                <td>Rotate Left</td>
+            </tr>
+            <tr>
+                <td>&#8594;</td>
+                <td>Rotate Right</td>
+            </tr>
+            <tr>
+                <td>&#8593;</td>
+                <td>Thrust</td>
+            </tr>
+            <tr>
+                <td>Space</td>
+                <td>Fire</td>
+            </tr>
+        </table>
+
+    </div>
+    <div style="margin: 20px">
+        <canvas height="600" id="asteroids" tabindex="1" width="600"></canvas>
+    </div>
+    <div style="margin: 20px">
+        <h3>High Scores</h3>
+        <div id="high-scores">
+
+        </div>
+    </div>
+</div>
+<script>
+    'use strict';
+    import("./game.js").then((asteroids) =>{
+        const game = new asteroids.AsteroidsGame("asteroids", "high-scores");
+    });
+</script>
+</body>
+</html>
